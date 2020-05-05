@@ -1,0 +1,207 @@
+@charset "ISO-8859-1";
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  											Login section section 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/    
+#pageBody{
+	
+	z-index: 50;
+	position: fixed;
+	width:100%; 
+	background-color: white;
+	padding: 6% 0% 9% 20%;
+	background: rgba(0,0,0,.4);
+	
+}
+.Stext{
+    
+    color: #006d96;
+    float: right;
+     
+    
+} 
+#vEmail,#vPassword{
+	
+     color: red;
+     font-weight: bold;
+}
+    
+#loginform-back{
+	background-color : white;
+	float : left;
+	padding : 40px 40px 60px 40px;
+	border-radius : 10px;
+	box-shadow : 0px 0px 10px gray;
+	width: 75%;
+	margin-left: auto;
+	margin-left: auto;
+	 
+	}
+#close{
+	color: red;
+	float: right;
+}
+#close:hover{
+	cursor: pointer;
+	color: #f20000;
+}
+
+
+#signInfont{
+    font-size: 30px;
+     
+}
+ 
+
+#signinButton{
+    background-color : #006d96;
+	color : white ;
+	box-sizing: border-box;
+    padding: 12px 15px 12px 15px;
+    border-radius: 10px;
+	margin : 15px 0px 0px 40px;
+    font-size: 15px;
+    font-weight: bold;
+    width: 110px;
+    opacity: 1;
+}
+
+#signinButton:hover{
+    opacity: 0.8;
+}
+
+#mTable{
+    width:100%;
+    margin-top: 20px;
+}
+@media screen and (max-width: 1100px){
+  
+#loginform-back{
+	 
+	padding : 20px 40px 60px 40px;  
+	width: 85%;
+	}
+
+#pageBody{
+	 
+	 
+	padding: 4% 0px 29% 15%;
+	 
+}
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------ 
+							header and nav bars
+------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+#head{
+	background-color:#1a385b;
+	width: 100%;
+	height: 31px;	 
+	padding-top: 2px; 
+	top: 0;
+	
+}
+#hrl{
+	color: white;
+	font-size: 17px;
+}
+#head_left{
+	float: left;
+	margin-right: 12px;	 
+	padding-left: 10px;
+} 
+
+a:link, a:visited{
+	 
+	color: white;
+	font-size: 17px;
+	 
+}
+.text-decoration-none:hover  {
+	color: #ffff00;
+}
+
+#hItem{
+	float: left;
+	margin-left: 11px;
+}
+
+#head_right{
+	float: right;
+	margin-right: 12px;	 
+}
+#head_right_callapse{
+	float: right;
+	margin-right: 12px;	
+	 
+}
+#topNavtoggler{
+	 color: white;
+	 font-size: 17px; 
+	 background-color: transparent;
+	 border: none;
+	 float: right;
+	 display: none; 
+	  
+}
+#nav{
+	background-color:#1a385b;
+	width: 100%;
+	height: 40px;	 
+	margin-bottom: 0px; 
+	padding-top: 7px;
+	
+}
+#head_left{
+	float: left;
+	margin-right: 12px;	 
+	padding-left: 10px;
+}
+#loginText{
+	color: white;
+}
+#loginText:hover {
+	color: yellow;
+	cursor:pointer;
+}
+ 
+@media only screen and (max-width: 800px) {
+
+#head{
+	 position: fixed;
+	 z-index: 50;
+}	
+	
+#topNavtoggler{
+	 
+	 display:inline;
+	 margin-left: 24px;
+	  
+	  
+}
+#head_left{
+	float: left;
+	margin-right: 12px;	
+	 
+	width: 100%; 
+}
+#head_right{
+	 
+	display: none;
+}
+#head_right_callapse{
+	width: 100px; 
+	background-color:#1a385b;
+	margin-right: 0px; 
+	margin-top:25px;
+	padding-top:10px;
+	height: 130px;
+	position: fixed; 
+	top: 0;
+  	right: 0;
+  	z-index: 20;
+  	 
+}
+ 
+ 
+}

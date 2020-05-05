@@ -1,0 +1,94 @@
+
+/* 
+    Created on : Sep 10, 2015, 12:50:02 PM
+    Author     : buddhi
+    (
+     )
+  c[]
+*/
+
+
+.particular{
+    margin-left: 100px; 
+    width: 960px;
+}
+.booking_table{
+    margin-left:  100px;
+    padding-left: 50px;
+}
+.booking_table tbody{
+    padding-left: 50px;
+}
+.booking_table td{
+    padding-left: 15px;
+
+}
+.booking_table tr{
+    padding-left: 10px;
+    margin-left: 60px;
+}
+
+.booking_table td th{
+    margin: 10px;
+
+}
+.booking_table select{
+    margin: 5px;
+}
+.booking_table input{
+    margin: 5px;
+}
+
+.book_entree_table{
+    width: 100%;
+    padding-left: 50px;
+}
+.book_entree_table td {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.book_entree_table th{
+    margin: 10px;
+}
+
+.book_entree_table tr{
+    padding-left: 10px;
+    margin-left: 60px;
+}
+
+.currency_value{
+    text-align: right;
+}
+.error_td{
+    color: #FF8181;
+    text-align: left;
+    font-size: 14pt;
+    vertical-align: middle;
+}
+
+.amount{
+    text-align: right;
+}
+
+input.currency {
+    text-align: right;
+    padding-right: 15px;
+}
+.comments_lable{
+    vertical-align: top;
+    padding: 5px;
+}
+
+.total_row{
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+.bills_container{
+    margin-left: 10px;
+    margin-top: 10px;    
+}
+
+
+

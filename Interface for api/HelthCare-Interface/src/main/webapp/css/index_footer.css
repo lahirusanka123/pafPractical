@@ -1,0 +1,68 @@
+@charset "ISO-8859-1";
+
+#foot{
+	background-color:#1a385b;
+	width: 100%;	 
+	float: left;
+	border-color: #400080;
+	border-top-style: solid;
+  	border-width: 1px;
+  	padding-top: 12px;
+  	border-color: white;
+	border-style: solid;
+	border-width: 1px 0px 0px 0px;
+  	
+}
+#cName{
+	text-align: center;
+	color: white;
+	 
+}
+#hrLine{
+	width: 100%;
+	background-color: #c0c0c0;
+	height: 1px;
+	float: left;
+	margin-top: 0px;
+	margin-bottom: 12px;
+	
+} 
+#f_l_Item{
+	
+	width: 50%;
+	padding-left: 15px;
+	color: white;
+	margin-bottom: 10px; 
+	float: left;
+	padding-top: 10px;
+}
+#f_l_contact{
+	 font-size: 15px; 
+	 padding-top: 7px;
+}
+#name{
+	color: #1aacac;
+} 
+#googleMap{
+	width: 50%;
+	margin-bottom: 10px; 
+	float: left;
+	padding-right: 15px;
+}
+@media only screen and (max-width: 1015px) {
+#googleMap{
+	width: 100%;	
+	padding-right: 0px;
+}
+#f_l_Item{
+	
+	width: 100%;
+	 
+}	
+	
+}
+
+
+
+
+

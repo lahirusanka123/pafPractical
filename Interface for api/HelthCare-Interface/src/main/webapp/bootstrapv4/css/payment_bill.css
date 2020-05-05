@@ -1,0 +1,121 @@
+/* 
+    Created on : Oct 12, 2015, 11:39:14 AM
+    Author     : buddhi
+*/
+
+.payment_container{
+    margin-left: 50px;
+    margin-top: 10px;    
+}
+.payment_bill_from_table{
+    margin-top: 20px;
+    
+   
+}
+.payment_bill_from_table tbody{
+    padding-left: 50px;
+}
+.payment_bill_from_table td{
+    padding-left: 15px;
+}
+.payment_bill_from_table tr{
+    padding-left: 10px;
+    margin-left: 60px;
+}
+.payment_bill_from_table td th{
+    margin: 10px;
+}
+.payment_bill_from_table select{
+    margin: 5px;
+}
+.payment_bill_from_table input{
+    margin: 5px;
+}
+.currency_value{
+    text-align: right;
+}
+.error_td{
+    color: #FF8181;
+    text-align: left;
+    font-size: 14pt;
+    vertical-align: middle;
+}
+#pay_bill_table tr.selected td{
+    background-color: #449D44 !important;    
+   
+}
+#general_inventory_table tr.selected td{
+    background-color: #449D44 !important;   
+   
+}
+#raw_materials_table tr.selected td{
+    background-color: #449D44 !important;  
+  
+}
+#general_inventory_table tr a{
+    color: black;
+    border-bottom: none;
+}
+#general_inventory_table tr.selected a{
+    color: white;
+    border-bottom: none;
+}
+
+#raw_materials_table tr a{
+    color: black;
+    border-bottom: none;
+}
+#raw_materials_table tr.selected a{
+    color: white;
+    border-bottom: none;
+}
+
+#pay_bill_table tr a{
+    color: black;
+    border-bottom: none;
+}
+#pay_bill_table tr.selected a{
+    color: white;
+    border-bottom: none;
+}
+#raw_materials_table tr a{
+    color: black;
+    border-bottom: none;
+}
+#raw_materials_table tr.selected a{
+    color: white;
+    border-bottom: none;
+}
+
+.amount{
+    text-align: right;
+}
+input.currency {
+    text-align: right;
+    padding-right: 15px;
+}
+.total_row{
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+.vender_select{
+    margin-top: 10px;
+    margin-left:  50px;
+    padding-left: 50px;
+}
+
+.vender_select td{
+    padding-left: 15px;
+}
+#ledger_balance{
+    font-weight: bold;
+    vertical-align: middle;
+}
+#exhange_rate{
+    font-weight: bold;
+    vertical-align: middle;
+}
+.pay_amount_text{
+     text-align: right;    
+}

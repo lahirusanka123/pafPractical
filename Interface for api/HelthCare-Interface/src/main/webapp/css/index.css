@@ -1,0 +1,164 @@
+@charset "ISO-8859-1";
+
+ 
+/*------------------------------------------------------------------------------------------------------------------------------------------------ 
+							body section
+------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+#bd1{
+	background-color: #11996c;
+	width: 100%;	 
+	float: left;
+	transition: background-color 0.5s;
+}
+
+#bLeft{
+	width: 50%;
+	text-align: justify;
+	padding: 15px 10px 15px 13px;	 
+	color: white;
+	float: left;
+	 
+}
+#bd1:hover {
+	background-color: #1a7b86;
+	
+}
+#bd2{
+	background-color: #05a9a5;
+	width: 25%;
+	height: 450px;	 
+	float: left;
+	border-color: white;
+	border-style: solid;
+	padding : 145px 10px 10px 10px;
+	border-width: 1px 1px 0px 0px;
+	color: white;
+	transition: padding-top 0.5s;
+	text-align: center;
+}
+
+#bd2:hover{
+	padding-top: 60px;
+}
+#bd3{
+	background-color: #218989;
+	width: 25%;
+	height: 450px;	 
+	float: left;
+	border-color: white;
+	border-style: solid;
+	border-width: 1px 1px 1px 0px;
+
+}
+
+#fun{
+	transition: padding 0.5s;
+}
+#fun:hover{
+	 
+	padding: 15px;
+}
+#bd4{
+	background-color: #1a7b86;
+	width: 25%;
+	height: 450px;	 
+	float: left;
+	border-color: white;
+	border-style: solid;
+	padding : 145px 10px 10px 10px;
+	border-width: 1px 1px 0px 0px;
+	color: white;
+	transition: padding-top 0.5s;
+	text-align: center;
+}
+#bd4:hover{
+	padding-top: 100px;
+}
+#bd5{
+	background-color: #218989;
+	width: 25%;
+	height: 450px;	 
+	float: left;
+	border-color: white;
+	border-style: solid;
+	border-width: 1px 0px 1px 0px;
+	transition: padding 0.5s;
+	 
+}
+#bd5:hover{
+	padding: 15px;
+	
+}
+#bRight{
+	 
+	width: 50%;	 
+	float: left;
+	color: #f7fb4d;
+	transition: background-color 1s;
+	
+}
+#bRight:hover{
+	background-color: #15646c;
+}
+#availability{
+	width: 93%;
+	border-color: white;
+	border-style: solid;
+	border-width: 5px 5px 5px 5px;
+	margin: 50px 30px 51px 30px;
+	padding: 30px 15px 20px 20px;
+	float: left;
+}
+#check{
+	width: 60%;	 
+	float: left;
+	padding-right: 10px;
+	margin-bottom: 10px;
+	color: white;
+}
+#clearBtn{
+	width: 40%;	 
+	float: left;
+	padding-right: 10px;
+	margin-top: 24px;
+	 
+}
+ 
+@media only screen and (max-width: 800px) {
+
+ 
+#bLeft{
+	width: 100%;
+		 
+}
+#bRight{
+	 
+	width: 100%;	 
+	 	
+}
+#availability{
+	
+	margin: 10px 30px 10px 30px;
+	padding: 30px 15px 20px 20px;
+}
+#demo{
+	margin-top: 31px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
