@@ -15,44 +15,21 @@ public class DoctorModel {
 
 	public String ViewDoctor() {
 		
-		String a = null;
+		String a = "" ;
 		
 		try {
 			String sql = "SELECT * FROM doctor";
 			PreparedStatement ps = con.prepareStatement(sql);
 			ResultSet rs = ps.executeQuery(); 
-	         
-					a = "<table>"
-	     				+ "<tr>"
-	     				+ "<th>doctor_id</th>"	     				
-	     				+ "<th>f_name</th>"
-	     				+ "<th>l_name</th>"
-	     				+ "<th>email</th>"
-	     				+ "<th>phoneNo</th>"
-	     				+ "<th>nic</th>"	     				 
-	     				+ "<th>Specialization</th>"	     				 
-	     				+ "<th>age</th>"	     				 
-	     				+ "</tr>";		
-					
-					
+	          
 			
 	         while (rs.next()) {
              
-	        	   a +=  "<tr>"
-	     				+ "<td>"+rs.getInt("id")+"</td>"
-	     				+ "<td>"+rs.getString("f_name")+"</td>"
-	     				+ "<td>"+rs.getString("l_name")+"</td>"
-	     				+ "<td>"+rs.getString("email")+"</td>"
-	     				+ "<td>"+rs.getInt("phoneNo")+"</td>"
-	     				+ "<td>"+rs.getString("nic")+"</td>"	     				 			 
-	     				+ "<td>"+rs.getString("Specialization")+"</td>"	     				 			 
-	     				+ "<td>"+rs.getInt("age")+"</td>"	     				 			 
-	     				+ "</tr>";
-	     				 
-	        	   
+	        	   a +=  "<option value="+rs.getInt("id")+" >"+rs.getString("f_name")+" </option>";
+	        		  
 	         }
 	         
-	         a += "</table>";
+	          
 	         
 	         
 			} catch (SQLException e) {

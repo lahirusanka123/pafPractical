@@ -32,9 +32,7 @@
     	    	 
     	<a id="leftNevTEXT" href="index.jsp"><span class="glyphicon glyphicon-home"></span> Home</a><br>
     	 
-    	<div id="hrLine"></div>
-    	<a id="leftNevTEXTbody" href="inventory.jsp"><span class="glyphicon glyphicon-th"></span> Dashboard</a><br>
-    	<div id="hrLine"></div> 
+    	<div id="hrLine"></div>    	 
     	<a id="leftNevTEXTbody" href="KitchenItem.jsp" style="color: yellow;" ><span class="glyphicon glyphicon-apple"></span> Appointment</a><br>
     	<div id="hrLine"></div> 
     	 
@@ -53,33 +51,27 @@
   											kitchen inventory item body
   --------------------------------------------------------------------------------------------------------------------------------------------------------------------->    
     
-       
-   <form  > 
+   <form  id="app_submit"> 
     <div id="left">
     
          <div class="form-group">
-          <b>Select Doctor </b>  
-          <select id="doctor" onchange="abc();"  name="Supplier" class="form-control"   >
-               <option value="01001" >Select Supplier </option>
-               <option value="01002" >Select Supplier </option>
-        
-        
-          </select>           
+	          <b>Select Doctor </b>  
+	          <select id="doctor"     class="form-control"  >
+	               <option  value=""  > Select Doctor </option> 
+	          </select>           
          </div>   
         
         <div class="form-group">
-          <b>Select Hospital: </b>  
-         <select id="hospital" name="mainCategory" class="form-control"   >
-              <option value="99001">Select Supplier </option>
-              <option value="99002">Select Supplier </option>
+          	<b>Select Hospital: </b>  
+         	<select id="hospital"  class="form-control"   >
+              <option value="" > Select Hospital  </option>
                
-        
-          </select> 
+          	</select> 
         </div> 
         
         <div class="form-group">
           <b>Date:  </b>  
-          <input id="dates" name="Capacity"  class="form-control" type="date" > 
+          <input id="dates" name="Capacity"   class="form-control" type="date" > 
         </div>
         
     	<div class="form-group">
@@ -87,8 +79,8 @@
          <input  id="times"  type="time" class= "form-control" name="price">
         </div>
         
-        <input id="appointmentId" type="text">
-        <input id="patientId" type="text">
+        <input id="appointmentId" type="hidden">
+        <input id="patientId" value="9901" type="hidden">
         
          <p id="hi"></p>
     </div>
@@ -110,6 +102,8 @@
     </div>  
      
    </form>
+   
+    
     
    <div id="viewall"> 
    			<p id="appTable"></p>
@@ -118,6 +112,11 @@
        
    <%@include file="index_footer.jsp" %> 
 </body>
+
+	<script type="text/javascript">
+		var datess = '<%=request.getParameter("aDate")%>';
+		$("#dates").val(datess);
+	</script>
 	<script src="scripts/AppointmentScript.js"></script>
 </html>
 

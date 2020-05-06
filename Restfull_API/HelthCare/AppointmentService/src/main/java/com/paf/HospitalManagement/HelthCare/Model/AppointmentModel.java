@@ -30,7 +30,7 @@ public class AppointmentModel {
 				a += "<tr>" + "<td>" + rs.getInt("appointment_id") + "</td>" + "<td>" + rs.getInt("patient_id") + "</td>"
 						+ "<td>" + rs.getInt("hospital_id") + "</td>" + "<td>" + rs.getInt("doctor_id") + "</td>" + "<td>"
 						+ rs.getString("date") + "</td>" + "<td>" + rs.getString("time") + "</td>" 
-						+"<td><button\" type=\"button\"  class=\"select btn btn-success\"> Select</button> </td>"
+						+"<td><button\" type=\"button\"  class=\"select btn btn-success btn-sm\"> Select</button> </td>"
 						+ "</tr>";
 
 			}

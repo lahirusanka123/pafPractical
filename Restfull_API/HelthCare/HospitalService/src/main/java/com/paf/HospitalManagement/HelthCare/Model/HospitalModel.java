@@ -15,38 +15,23 @@ public class HospitalModel {
 
 	public String ViewHospital() {
 		
-		String a = null;
+		String a = "";
 		
 		try {
 			String sql = "SELECT * FROM hospital";
 			PreparedStatement ps = con.prepareStatement(sql);
 			ResultSet rs = ps.executeQuery(); 
 	         
-					a = "<table>"
-	     				+ "<tr>"
-	     				+ "<th>hospital_id<td>"	     				
-	     				+ "<th>hospitalName<td>"
-	     				+ "<th>email<td>"
-	     				+ "<th>phoneNo<td>"
-	     				+ "<th>city<td>"
-	     				+ "<th>address<td>"	     				 
-	     				+ "</tr>";					
+					 			
 			
 	         while (rs.next()) {
              
-	        	   a +=  "<tr>"
-	     				+ "<td>"+rs.getInt("hospital_id")+"<td>"
-	     				+ "<td>"+rs.getString("hospitalName")+"<td>"
-	     				+ "<td>"+rs.getString("email")+"<td>"
-	     				+ "<td>"+rs.getInt("phoneNo")+"<td>"
-	     				+ "<td>"+rs.getString("city")+"<td>"
-	     				+ "<td>"+rs.getString("address")+"<td>"	     				 			 
-	     				+ "</tr>";
+	        	 a +=  "<option value="+rs.getInt("hospital_id")+" >"+rs.getString("hospitalName")+" </option>";
 	     				 
 	        	   
 	         }
 	         
-	         a += "</table>";
+	         
 	         
 	         
 			} catch (SQLException e) {

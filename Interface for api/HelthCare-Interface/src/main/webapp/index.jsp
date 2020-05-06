@@ -136,7 +136,7 @@
 				<form action="Appointment.jsp" method="post">
 					<h4>Make an Appointment</h4>
 					<div id="check">
-						<b>Select date</b> <input type="date" name="inDate"
+						<b>Select date</b> <input type="date" name="aDate"
 							class="form-control" id="ckeckIn">
 					</div>
 
@@ -164,7 +164,7 @@
 
 	</div>
 	<div id="bd3">
-		<img id="fun" alt="" src="image/home/slide/fun.jpg" width="100%">
+		<img id="fun" alt="" src="image/b1 (1).jpg" width="100%">
 
 	</div>
 	<div id="bd4">
@@ -178,7 +178,7 @@
 
 	</div>
 	<div id="bd5">
-		<img id="bd5Img" alt="" src="image/home/slide/food.jpg" width="100%">
+		<img id="bd5Img" alt="" src="image/b1 (2).jpg" width="100%">
 	</div>
 
 	<%@include file="index_footer.jsp"%>

@@ -1,7 +1,5 @@
 package com.paf.HospitalManagement.HelthCare.Contraller;
 
-import java.sql.Date;
-
 import javax.ws.rs.Consumes;
 import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;
@@ -39,14 +37,15 @@ public class AppointmentService {
 		
 		JsonObject A_details = new JsonParser().parse(details).getAsJsonObject(); 
 		 
-		 
+		int patient_id = A_details.get("patient_id").getAsInt(); 
 		int hospital_id = A_details.get("hospital_id").getAsInt();
 		int doctor_id = A_details.get("doctor_id").getAsInt();
 		String date = A_details.get("date").getAsString(); 
 		String time = A_details.get("time").getAsString(); 
 		
 		
-		AppointmentBean appointment = new AppointmentBean();		 
+		AppointmentBean appointment = new AppointmentBean();
+		appointment.setPatient_id(patient_id);
 		appointment.setHospital_id(hospital_id);
 		appointment.setDoctor_id(doctor_id);
 		appointment.setDate(date);  

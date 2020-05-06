@@ -88,8 +88,8 @@
 			<% } %>	
 					
 		 
-	 	 <a class="text-decoration-none" href="#">Reservation</a> <a id="hrl">|</a> 
-	 	 <a class="text-decoration-none" href="myBooking.jsp">My Appointment</a>  <a id="hrl">|</a>
+	 	  
+	 	 <a class="text-decoration-none" href="Appointment.jsp">My Appointment</a>  <a id="hrl">|</a>
 	 	 	<% if(session.getAttribute("login") == null){ %>
         		 <a id="loginText"  data-toggle="collapse" data-target="#pageBody">Log in </a>
 	        <%	}else{ 
