@@ -28,7 +28,7 @@
  #leftNavi{
  	background-color: #1d436d;
  	width: 17%;
- 	height: 550px;
+ 	height: 583px;
  	float: left;
  	padding-left: 11px;
  	padding-right: 11px;
@@ -136,9 +136,9 @@
     padding: 40px 0px 0px 50px;
 }
 #rightBottom{
-	width: 460px;
+	width: 100%;
     float: left;
-    padding: 20px 0px 0px 50px;
+    padding: 20px 0px 0px 12px;
 	 
 }
 #addBtn,#editBtn,#deleteBtn{
@@ -147,18 +147,26 @@
 	float: left;
 	margin-left: 10px;
 }
-#clearBtn{
+#viewAllAppointment{
 	 float: left;
-	 width: 100%;
+	 width: 86%;
 	 font-weight: bold;
-	 margin-left: 10px;
+	  
 }
 #item_btn{
     padding: 24px 0px 0px 0px;
-     
+    float: left; 
      
 }
-
+#viewall{
+	 
+	height: 160px;
+	float: left;
+	overflow: scroll;
+	margin-top: 20px;
+	width: 77%;
+	margin-left: 52px;
+}
 #Brand_main{
     width: 350px;
     padding: 20px;

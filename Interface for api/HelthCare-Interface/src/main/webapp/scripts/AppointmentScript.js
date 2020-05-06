@@ -1,22 +1,126 @@
- 
-	$(document).ready(function() {
 
-		$('#addBtn').click(function() {
 
-			var ans = $.ajax({
-				type : 'GET',
-				url : "http://localhost:8080/HelthCare/webapi/Admin/getit",
-				contentType : 'application/json',
-				success : function(response) {
+$(document).ready(function() {
 
-					alert(response);
-					$("#hi").html(response);
-					alertOpen("Please Fill Mandatory Fields !", "error");
-				}
-			 
-			});
+	$('#addBtn').click(function() { 	//button click event for add button
+		
+		var doctor_id =    $("#doctor").val();
+		var hospital_id =  $("#hospital").val();
+		var dates =  	$("#dates").val();
+		var times =  	$("#times").val();
+		 
+		var formdata = {doctor_id: doctor_id, hospital_id: hospital_id, date: dates, time: times}
+		    formdata =  JSON.stringify(formdata);
+
+		$.ajax({
+			type : 'POST',
+			url : "http://localhost:8080/AppointmentService/webapi/Appointment/",
+			data: formdata,
+			contentType : 'application/json',
+			success : function(response) {
+
+				alert(response);
+				var d = response;
+
+				var json = JSON.parse(d);
+
+				$("#hi").html(json.itemName);
+
+			}
+		 
 		});
 	});
+	
+	
+	$('#viewAllAppointment').click(function() { 	//button click event for viewAllAppointment
+		 
+
+		$.ajax({
+			type : 'GET',
+			url : "http://localhost:8080/AppointmentService/webapi/Appointment/",			 
+			contentType : 'application/json',
+			success : function(response) {
+
+				
+				$("#appTable").html(response);
+				
+			}
+		 
+		});
+	});	
+	
+	$('#editBtn').click(function() { 	//button click event for update
+		 
+		
+		var appointmentId = $("#appointmentId").val();
+		var patientId =     $("#patientId").val();
+		var doctor_id =     $("#doctor").val();
+		var hospital_id =   $("#hospital").val();
+		var dates =  		$("#dates").val();
+		var times =  		$("#times").val();
+		 
+		var formdata = {appointment_id: appointmentId, patient_id: patientId, doctor_id: doctor_id, hospital_id: hospital_id, date: dates, time: times}
+		    formdata =  JSON.stringify(formdata);
+
+		$.ajax({
+			type : 'PUT',
+			url : "http://localhost:8080/AppointmentService/webapi/Appointment/",
+			data: formdata,
+			contentType : 'application/json',
+			success : function(response) {
+
+				alert(response);
+				var d = response;
+
+				var json = JSON.parse(d);
+
+				$("#hi").html(json.itemName);
+
+			}
+		 
+		});
+	});	
+	
+	$('#deleteBtn').click(function() { 	//button click event for update
+		 
+		
+		var appointmentId = $("#appointmentId").val();
+		 
+		 
+		var formdata = {appointment_id: appointmentId }
+		    formdata =  JSON.stringify(formdata);
+
+		$.ajax({
+			type : 'DELETE',
+			url : "http://localhost:8080/AppointmentService/webapi/Appointment/",
+			data: formdata,
+			contentType : 'application/json',
+			success : function(response) {
+
+				alert(response);
+				var d = response;
+
+				var json = JSON.parse(d);
+
+				$("#hi").html(json.itemName);
+
+			}
+		 
+		});
+	});	
+});
+ 
+
+$(document).on("click", ".select", function(event) {     
+	    
+	$("#appointmentId").val($(this).closest("tr").find('td:eq(0)').text());     
+	$("#patientId").val($(this).closest("tr").find('td:eq(1)').text());     
+	$("#doctor").val($(this).closest("tr").find('td:eq(2)').text());     
+	$("#hospital").val($(this).closest("tr").find('td:eq(3)').text());     
+	$("#dates").val($(this).closest("tr").find('td:eq(4)').text());     
+	$("#times").val($(this).closest("tr").find('td:eq(5)').text()); 
+}); 
+
 
  
 
@@ -198,4 +302,4 @@
 //    
 // }
 //
-// 
+ 

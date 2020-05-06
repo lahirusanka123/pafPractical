@@ -56,25 +56,21 @@ public class AdminService {
 		return "Got it!"+s;
 	}
 
-	@GET 
+	@POST
 	@Path("/Doctor")
 	@Consumes(MediaType.APPLICATION_JSON)
 	 
 	 
 	 
-	public String User() {
+	public String User(String str) {
 		
-		String  str = "{\"itemID\":\"111\",  \"itemCode\":\"0002\",  \"itemName\":\"lahiru\",  \"itemPrice\":\"45rs\",  \"itemDesc\":\"50%\" }"; 
 		 
-		
-
 		JsonObject itemObject = new JsonParser().parse(str).getAsJsonObject();
 
-		String itemID = itemObject.get("itemID").getAsString();
-		String itemCode = itemObject.get("itemCode").getAsString();
-		String itemName = itemObject.get("itemName").getAsString();
-		String itemPrice = itemObject.get("itemPrice").getAsString();
-		String itemDesc = itemObject.get("itemDesc").getAsString();
+		String itemID = itemObject.get("doctor").getAsString();
+		String itemCode = itemObject.get("hospital").getAsString();
+		String itemName = itemObject.get("dates").getAsString();
+		String itemPrice = itemObject.get("times").getAsString();  
 
 		ArrayList<String> user = new ArrayList<String>();
 		
@@ -82,7 +78,7 @@ public class AdminService {
 		user.add(itemCode);
 		user.add(itemName);
 		user.add(itemPrice);
-		user.add(itemDesc);
+		 
 		
 		String a = "<table>"
 				+ "<tr>"
@@ -96,8 +92,7 @@ public class AdminService {
 				+ "<td>"+itemID+"<td>"
 				+ "<td>"+itemCode+"<td>"
 				+ "<td>"+itemName+"<td>"
-				+ "<td>"+itemPrice+"<td>"
-				+ "<td>"+itemDesc+"<td>"
+				+ "<td>"+itemPrice+"<td>"				 
 				+ "</tr>"
 				+ "</table>";
 		System.out.println("this"+itemObject);

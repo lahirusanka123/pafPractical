@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-<title>Yula Beach Hotel</title>
+<title>HelthCare</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" style="text/css" href="css/index.css">
 
@@ -133,7 +133,7 @@
 		</div>
 		<div id="bRight">
 			<div id="availability">
-				<form action="RoomCategory.jsp" method="post">
+				<form action="Appointment.jsp" method="post">
 					<h4>Make an Appointment</h4>
 					<div id="check">
 						<b>Select date</b> <input type="date" name="inDate"

@@ -22,14 +22,16 @@ public class AppointmentModel {
 			PreparedStatement ps = con.prepareStatement(sql);
 			ResultSet rs = ps.executeQuery();
 
-			a = "<table>" + "<tr>" + "<th>appointment_id<td>" + "<th>patient_id<td>" + "<th>hospital_id<td>"
-					+ "<th>doctor_id<td>" + "<th>date<td>" + "<th>time<td>" + "</tr>";
+			a = "<table class=\"table \"> <tr> <th>id</th> <th>Patient id</th> <th>Hospital id</th>"
+					+ "<th>Doctor id</th> <th>Date</th> <th>Time</th><th> </th> </tr>";
 
 			while (rs.next()) {
 
-				a += "<tr>" + "<td>" + rs.getInt("appointment_id") + "<td>" + "<td>" + rs.getInt("patient_id") + "<td>"
-						+ "<td>" + rs.getInt("hospital_id") + "<td>" + "<td>" + rs.getInt("doctor_id") + "<td>" + "<td>"
-						+ rs.getString("date") + "<td>" + "<td>" + rs.getString("time") + "<td>" + "</tr>";
+				a += "<tr>" + "<td>" + rs.getInt("appointment_id") + "</td>" + "<td>" + rs.getInt("patient_id") + "</td>"
+						+ "<td>" + rs.getInt("hospital_id") + "</td>" + "<td>" + rs.getInt("doctor_id") + "</td>" + "<td>"
+						+ rs.getString("date") + "</td>" + "<td>" + rs.getString("time") + "</td>" 
+						+"<td><button\" type=\"button\"  class=\"select btn btn-success\"> Select</button> </td>"
+						+ "</tr>";
 
 			}
 

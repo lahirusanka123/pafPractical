@@ -27,7 +27,7 @@ public class AppointmentService {
 		
 		AppointmentModel model = new AppointmentModel();
 		String status = model.ViewAppointment(); 
-		
+		System.out.println(status);
 		return status;
 	}
 	
@@ -39,7 +39,7 @@ public class AppointmentService {
 		
 		JsonObject A_details = new JsonParser().parse(details).getAsJsonObject(); 
 		 
-		int patient_id = A_details.get("patient_id").getAsInt();
+		 
 		int hospital_id = A_details.get("hospital_id").getAsInt();
 		int doctor_id = A_details.get("doctor_id").getAsInt();
 		String date = A_details.get("date").getAsString(); 
@@ -47,7 +47,6 @@ public class AppointmentService {
 		
 		
 		AppointmentBean appointment = new AppointmentBean();		 
-		appointment.setPatient_id(patient_id);
 		appointment.setHospital_id(hospital_id);
 		appointment.setDoctor_id(doctor_id);
 		appointment.setDate(date);  
@@ -91,7 +90,7 @@ public class AppointmentService {
 	@DELETE
 	@Path("/")
 	@Consumes(MediaType.APPLICATION_JSON)
-	@Produces(MediaType.APPLICATION_JSON) 
+	 
 	
 	public String Delete_Appointment(String id) {
 		
